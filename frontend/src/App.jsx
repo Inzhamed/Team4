@@ -1,8 +1,11 @@
+import Signup from "./Signup"
 
 function App() {
   return (
     <>
-      <p>coucou</p> 
+      <p>
+        <Signup />
+      </p> 
     </>
   )
 }
