@@ -2,7 +2,7 @@
 function App() {
   return (
     <>
-      <p>hello there</p>
+      <p>coucou</p>
     </>
   )
 }
