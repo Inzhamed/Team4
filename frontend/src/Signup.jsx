@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Doctors from './assets/doctors.svg';
 import Logo from './assets/logo.svg';
 import GoogleLogo from "./assets/googlelogo.svg";
@@ -71,6 +72,9 @@ const Signup = () => {
                     <img src={GoogleLogo} alt="Google Logo" className="w-5 h-5 md:w-6 md:h-6" /> {/* Adjusted Google logo size */}
                     <span>Register with Google</span>
                 </button>
+                <p className='text-sm text-center mt-4'>
+                    Already have an account? <Link to="/signin" className='text-indigo-800'>Sign in here!</Link>
+                </p>
             </div>
         </div>
     );
