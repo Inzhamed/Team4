@@ -1,6 +1,8 @@
+import ViteImagesPlugin from 'vite-plugin-images';
+
 export default {
-  plugins: {
-    tailwindcss: {},
-    autoprefixer: {},
-  },
-}
+  plugins: [
+    ViteImagesPlugin(),
+  ],
+};
+
