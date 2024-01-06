@@ -15,9 +15,15 @@ import Filter from '../assets/filter.svg';
 import Add from '../assets/add.svg';
 import Threepoints from '../assets/threepoints.svg';
 import { useState } from 'react';
+import AddPatientPopup from './AddPatientPopup';
 
 const Patients = () => {
     const [hover, setHover]= useState(false);
+    const [showPopup, setShowPopup] = useState(false);
+
+    const togglePopup = () => {
+        setShowPopup(!showPopup);
+    };
     return (
         <div className='flex h-screen'>
             <div onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)} className={'bg-indigo-800 shadow text-white transition duration-3000 w-32 hover:w-64 hover:duration-3000 hover:transition flex flex-col items-center justify-between'}>
@@ -78,10 +84,11 @@ const Patients = () => {
                                 <img className='ml-1 mt-1 absolute' src={Search} alt="Search" />
                             </div>
                             <div className='flex gap-8 mr-14'>
-                                <img className='mt-11' src={Add} alt="Add" />
+                                <img className='mt-11' id='Add' src={Add} alt="Add" onClick={togglePopup}/>  
                                 <img className='mt-11' src={Filter} alt="Filter" />
                             </div>
                         </div>
+                        <AddPatientPopup show={showPopup} handleClose={togglePopup} className='w-2/3 h-[32rem] bg-white rounded-2xl shadow'/>
                         <div className="w-[64rem] h-28 gap-40 flex mt-20 justify-center mb-9 ml-14">
                             <div className='font-semibold'>Name</div>
                             <div className='font-semibold'>Age</div>
