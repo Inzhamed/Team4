@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
-import Doctors from './assets/doctors.svg';
-import Logo from './assets/logo.svg';
-import GoogleLogo from "./assets/googlelogo.svg";
+import Doctors from '../assets/doctors.svg';
+import Logo from '../assets/logo.svg';
+import GoogleLogo from "../assets/googlelogo.svg";
 
 
 const SignIn = () => {
