@@ -9,6 +9,11 @@ import Logout from '../assets/logout.svg';
 import Bell from '../assets/bell.svg';
 import Avatar from '../assets/avatar.svg';
 import ArrowDown from '../assets/arrowdown.svg';
+import Rectangle from '../assets/Rectangle.svg';
+import Search from '../assets/search.svg';
+import Filter from '../assets/filter.svg';
+import Add from '../assets/add.svg';
+import Threepoints from '../assets/threepoints.svg';
 import { useState } from 'react';
 
 const Patients = () => {
@@ -55,16 +60,46 @@ const Patients = () => {
                     </ul>
                 </div>
             </div>
-            <div className='flex-1 bg-gray-200'>
-                <div className='flex gap-7 justify-end mr-6 mt-6'>
-                    <img src={Bell} alt="Bell" />
-                    <div className='flex gap-3'>
+            <div className='flex-1'>
+                <div className='flex justify-between'>
+                    <h1 className='text-indigo-800 text-4xl font-bold ml-12 mt-14'>Patients</h1>
+                    <div className='flex gap-5 mr-6 mt-10'>
+                        <img className='mr-6' src={Bell} alt="Bell" />
                         <img src={Avatar} alt="avatar" />
                         <p>Dr. Name</p>
                         <img src={ArrowDown} alt="arrowdown" />
                     </div>
                 </div>
-                <div>Welcome to patients page!</div>    
+                    <div className="w-[75rem] h-[40rem] bg-neutral-100 rounded-2xl border-2 border-zinc-100 ml-28 mt-8">
+                        <div className='flex justify-between'>
+                            <h2 className='text-indigo-800 text-4xl font-semibold ml-16 mt-11'>List</h2>
+                            <div className='relative w-[32rem] h-8 mt-11'>
+                                <img className='absolute' src={Rectangle} alt="Rectangle" />
+                                <img className='ml-1 mt-1 absolute' src={Search} alt="Search" />
+                            </div>
+                            <div className='flex gap-8 mr-14'>
+                                <img className='mt-11' src={Add} alt="Add" />
+                                <img className='mt-11' src={Filter} alt="Filter" />
+                            </div>
+                        </div>
+                        <div className="w-[64rem] h-28 gap-40 flex mt-20 justify-center mb-9 ml-14">
+                            <div className='font-semibold'>Name</div>
+                            <div className='font-semibold'>Age</div>
+                            <div className='font-semibold'>Last Appointment</div>
+                            <div className='font-semibold'>Next Appointment</div>
+                        </div>
+                        <div className='flex justify-around items-center'>
+                            <div className='flex gap-4'>
+                                <img src={Avatar} alt="Avatar" />
+                                <p>Nassim Hadjebbar</p>
+                            </div>
+                            <p>19</p>
+                            <p>01 June 2004</p>
+                            <p>01 June 2004</p>
+                            <img className='-ml-4' src={Threepoints} alt="Threepoints" />
+                        </div>
+        
+                    </div>    
             </div>
         </div>
     );

@@ -55,11 +55,11 @@ const Home = () => {
                     </ul>
                 </div>
             </div>
-            <div className='flex-1 bg-white'>
+            <div className='flex-1'>
                 <div className='flex justify-between'>
                     <div className='ml-14 mt-11'>
                         <h2 className='text-2xl'>Welcome</h2>
-                        <h3 className='text-3xl font-semibold'>Dr. Le Kitty Cat!</h3>
+                        <h3 className='text-indigo-800 text-3xl font-semibold'>Dr. LeKitty Cat!</h3>
                         <p className='text-neutral-500 text-sm mt-1'>Here are your recent Tasks. updates and Appointments </p>
                     </div>
                     <div className='flex gap-5 mr-6'>
