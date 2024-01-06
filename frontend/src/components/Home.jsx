@@ -55,22 +55,45 @@ const Home = () => {
                     </ul>
                 </div>
             </div>
-            <div className='flex-1 bg-gray-200'>
-                <div className='flex gap-7 justify-end mr-6 mt-6'>
-                    <img src={Bell} alt="Bell" />
-                    <div className='flex gap-3'>
+            <div className='flex-1 bg-white'>
+                <div className='flex justify-between'>
+                    <div className='ml-14 mt-11'>
+                        <h2 className='text-2xl'>Welcome</h2>
+                        <h3 className='text-3xl font-semibold'>Dr. Le Kitty Cat!</h3>
+                        <p className='text-neutral-500 text-sm mt-1'>Here are your recent Tasks. updates and Appointments </p>
+                    </div>
+                    <div className='flex gap-5 mr-6'>
+                        <img className='mr-6' src={Bell} alt="Bell" />
                         <img src={Avatar} alt="avatar" />
-                        <p>Dr. Name</p>
+                        <p className='mt-10'>Dr. Name</p>
                         <img src={ArrowDown} alt="arrowdown" />
                     </div>
                 </div>
                 <div className='flex justify-around my-10'>
-                    <div className='w-[795px] h-[380px] bg-neutral-100 rounded-2xl shadow-lg p-10'><h1 className='text-indigo-800 text-2xl font-semibold'>Schedule</h1></div>
-                    <div className='w-[595px] h-[380px] bg-neutral-100 rounded-2xl shadow-lg p-10'><h1 className='text-indigo-800 text-2xl font-semibold'>Patients</h1></div>
-                </div>
-                <div className='flex justify-around my-10'>
-                    <div className='w-[519px] h-72 bg-neutral-100 rounded-2xl shadow-lg p-10'><h1 className='text-indigo-800 text-2xl font-semibold'>Schedule</h1></div>
-                    <div className='w-[792px] h-72 bg-neutral-100 rounded-2xl shadow-lg p-10'><h1 className='text-indigo-800 text-2xl font-semibold'>Patients</h1></div>
+                    <div className='w-[50rem] h-96 bg-neutral-100 rounded-2xl shadow-lg pl-14 pt-9'>
+                        <h1 className='text-2xl font-semibold mb-7'>Upcoming Appointments</h1>
+                        <div className='w-[41rem] h-9 flex gap-24'>
+                            <div className="w-20 h-9 flex-col gap-1 flex">
+                                <div className="text-zinc-400 text-xs font-semibold">Date </div>
+                                <div className="w-20 text-xs font-medium">01 June 2004</div>
+                            </div>
+                            <div className="w-20 h-9 flex-col gap-1flex">
+                                <div className="text-zinc-400 text-xs font-semibold">Time</div>
+                                <div className="w-20 text-black text-xs font-medium">09:00h-10:00h</div>
+                            </div>
+                            <div className="w-80 h-9 flex-col gap-1 flex">
+                                <div className="text-zinc-400 text-xs font-semibold">Description</div>
+                                <div className="w-80 text-black text-xs font-medium">nahi darsa 36 ou yzayar salk tae l’appareil</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='w-[38rem] h-96 bg-neutral-100 rounded-2xl shadow-lg pl-14 pt-9'>
+                        <h1 className=' text-2xl font-semibold mb-3'>Recent Patients</h1>
+                        <div className='flex items-center gap-5 w-60 h-12'>
+                            <img className='w-10' src={Avatar} alt="avatar" />
+                            <p className='text-zinc-800 text-lg font-semibold'>Nassim Hadjebbar</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
